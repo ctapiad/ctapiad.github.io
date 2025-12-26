@@ -600,11 +600,13 @@ footer {
     .hero-buttons {
         flex-direction: column;
         gap: 0.8rem;
+        align-items: center;
     }
 
     .btn {
         width: 100%;
         max-width: 280px;
+        justify-content: center;
     }
 
     section {
