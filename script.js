@@ -208,5 +208,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Hacer las tarjetas de proyecto clickeables
+    document.querySelectorAll('.project-card').forEach(card => {
+        const link = card.querySelector('.project-links a');
+        if (link && !card.classList.contains('upcoming')) {
+            card.addEventListener('click', function(e) {
+                // Si no se hizo click en un botón específico, navegar al enlace
+                if (!e.target.closest('.btn')) {
+                    window.location.href = link.href;
+                }
+            });
+        }
+    });
+
     console.log('Portfolio loaded successfully! 🚀');
 });
