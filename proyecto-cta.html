@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema de Tickets y Reservas CTA - Proyecto de Innovación premiado">
+    <title>Sistema CTA - Cristian Tapia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="proyecto-cta.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h2>Cristian Tapia</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#proyectos">Proyectos</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Project Header -->
+    <section class="project-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Inicio</a> / <a href="index.html#proyectos">Proyectos</a> / <span>Sistema CTA</span>
+            </div>
+            <div class="project-header-content">
+                <div class="project-badge-large">
+                    <i class="fas fa-trophy"></i>
+                    <span>Premio Innovación DuocUC 2024</span>
+                </div>
+                <h1>Sistema Automatizado de Tickets y Reservas CTA</h1>
+                <p class="project-subtitle">Centro Tecnológico Audiovisual - DuocUC Sede Viña del Mar</p>
+                <div class="project-meta">
+                    <span><i class="fas fa-calendar"></i> 2024</span>
+                    <span><i class="fas fa-building"></i> DuocUC</span>
+                    <span><i class="fas fa-tools"></i> Microsoft 365 Ecosystem</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-overview">
+        <div class="container">
+            <h2 class="section-title">Resumen del Proyecto</h2>
+            <div class="overview-content">
+                <div class="overview-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Objetivo</h3>
+                    <p>Automatizar y optimizar el sistema de gestión de tickets, reservas de equipos audiovisuales y recintos del Centro Tecnológico Audiovisual.</p>
+                </div>
+                <div class="overview-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Impacto</h3>
+                    <p>Reducción significativa del tiempo de gestión, mejora en la trazabilidad y obtención de métricas en tiempo real para la toma de decisiones.</p>
+                </div>
+                <div class="overview-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Usuarios</h3>
+                    <p>Estudiantes de DuocUC, personal del CTA, y docentes involucrados en proyectos audiovisuales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problemática -->
+    <section class="problem-section">
+        <div class="container">
+            <h2 class="section-title">La Problemática</h2>
+            <div class="problem-content">
+                <div class="problem-text">
+                    <h3>Situación Inicial</h3>
+                    <p>El Centro Tecnológico Audiovisual de DuocUC Sede Viña del Mar enfrentaba múltiples desafíos operacionales:</p>
+                    
+                    <div class="problem-list">
+                        <div class="problem-item">
+                            <i class="fas fa-times-circle"></i>
+                            <div>
+                                <h4>Sin Sistema de Tickets Formal</h4>
+                                <p>La comunicación se realizaba únicamente a través de correos electrónicos, generando falta de trazabilidad y organización.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="problem-item">
+                            <i class="fas fa-times-circle"></i>
+                            <div>
+                                <h4>Inventario Desactualizado</h4>
+                                <p>Utilizaban GLPI en un entorno local solo accesible para trabajadores del área, con datos frecuentemente desactualizados.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="problem-item">
+                            <i class="fas fa-times-circle"></i>
+                            <div>
+                                <h4>Proceso Manual de Reservas</h4>
+                                <p>Los estudiantes debían enviar correos solicitando equipos y recibían PDFs con las reservas. Para los 4 recintos (3 estudios de sonido y 1 sala cyber café), se usaban archivos Word que debían rellenar y enviar.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="problem-item">
+                            <i class="fas fa-times-circle"></i>
+                            <div>
+                                <h4>Gestión Caótica de Recintos</h4>
+                                <p>Las reservas de recintos se registraban manualmente en Microsoft Planner sin calendarios visuales ni disponibilidad en tiempo real.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="problem-item">
+                            <i class="fas fa-times-circle"></i>
+                            <div>
+                                <h4>Imposibilidad de Métricas</h4>
+                                <p>Para obtener estadísticas era necesario contar correo por correo, haciendo imposible la toma de decisiones basadas en datos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="impact-box">
+                        <h4>Impacto Negativo</h4>
+                        <p>Este flujo de trabajo manual generaba ineficiencias operacionales, pérdida de tiempo, falta de transparencia para los estudiantes y una experiencia de usuario deficiente tanto para alumnos como para el personal del CTA.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solución -->
+    <section class="solution-section">
+        <div class="container">
+            <h2 class="section-title">La Solución</h2>
+            <div class="solution-intro">
+                <p>Se desarrolló un sistema integral automatizado utilizando el ecosistema de Microsoft 365, específicamente Power Automate, Microsoft Forms, Approvals y SharePoint.</p>
+            </div>
+
+            <h3 class="subsection-title">Arquitectura del Sistema</h3>
+            <div class="architecture">
+                <div class="architecture-item">
+                    <div class="arch-icon">
+                        <i class="fas fa-list"></i>
+                    </div>
+                    <h4>SharePoint Lists</h4>
+                    <p>Listas de "Reserva de Equipos" y "Reserva de Recintos" funcionando como base de datos centralizada para almacenar todos los tickets.</p>
+                </div>
+                
+                <div class="architecture-item">
+                    <div class="arch-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h4>Microsoft Forms</h4>
+                    <p>Múltiples formularios especializados: Solicitud de Equipos, Solicitud de Estudio de Sonido, Solicitud de Equipo de Postproducción, y Solicitud de Sala de Set de TV.</p>
+                </div>
+                
+                <div class="architecture-item">
+                    <div class="arch-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h4>Power Automate Flows</h4>
+                    <p>Flujos automatizados que capturan las respuestas de formularios, crean tickets en estado "Pendiente", gestionan aprobaciones y actualizan estados.</p>
+                </div>
+                
+                <div class="architecture-item">
+                    <div class="arch-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h4>Sistema de Aprobaciones</h4>
+                    <p>Proceso dual de aprobación: primero por el docente seleccionado, luego por el personal del CTA, con notificaciones automáticas por correo.</p>
+                </div>
+                
+                <div class="architecture-item">
+                    <div class="arch-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h4>Calendarios en Tiempo Real</h4>
+                    <p>Calendarios independientes para cada recinto que se actualizan automáticamente al aprobar una solicitud, mostrando disponibilidad en tiempo real.</p>
+                </div>
+                
+                <div class="architecture-item">
+                    <div class="arch-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h4>Portal SharePoint</h4>
+                    <p>Sitio web centralizado donde los estudiantes acceden a todos los formularios, calendarios y pueden ver el estado de sus solicitudes.</p>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">Flujo de Trabajo</h3>
+            <div class="workflow">
+                <div class="workflow-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Solicitud del Estudiante</h4>
+                        <p>El alumno accede al portal SharePoint y completa el formulario correspondiente (equipo o recinto).</p>
+                    </div>
+                </div>
+                
+                <div class="workflow-arrow">
+                    <i class="fas fa-arrow-down"></i>
+                </div>
+                
+                <div class="workflow-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Creación Automática de Ticket</h4>
+                        <p>Power Automate captura la respuesta y crea un ticket en la lista de SharePoint con estado "Pendiente".</p>
+                    </div>
+                </div>
+                
+                <div class="workflow-arrow">
+                    <i class="fas fa-arrow-down"></i>
+                </div>
+                
+                <div class="workflow-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Aprobación del Docente</h4>
+                        <p>El docente seleccionado recibe notificación para aprobar o rechazar la solicitud.</p>
+                    </div>
+                </div>
+                
+                <div class="workflow-arrow">
+                    <i class="fas fa-arrow-down"></i>
+                </div>
+                
+                <div class="workflow-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Aprobación del Personal CTA</h4>
+                        <p>Si el docente aprueba, la solicitud pasa al personal del CTA para verificación final.</p>
+                    </div>
+                </div>
+                
+                <div class="workflow-arrow">
+                    <i class="fas fa-arrow-down"></i>
+                </div>
+                
+                <div class="workflow-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>Actualización y Notificación</h4>
+                        <p>El ticket se actualiza a "Aprobado", se reserva en GLPI (equipos) o se actualiza el calendario (recintos), y se envía confirmación al estudiante.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tecnologías -->
+    <section class="tech-section">
+        <div class="container">
+            <h2 class="section-title">Tecnologías Utilizadas</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>Power Automate</h3>
+                    <p>Automatización de flujos de trabajo, gestión de aprobaciones y notificaciones automatizadas.</p>
+                </div>
+                <div class="tech-card">
+                    <i class="fas fa-database"></i>
+                    <h3>SharePoint</h3>
+                    <p>Almacenamiento de datos en listas, portal web y gestión de permisos.</p>
+                </div>
+                <div class="tech-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Microsoft Forms</h3>
+                    <p>Creación de formularios intuitivos para solicitudes de equipos y recintos.</p>
+                </div>
+                <div class="tech-card">
+                    <i class="fas fa-check-square"></i>
+                    <h3>Microsoft Approvals</h3>
+                    <p>Sistema de aprobaciones multinivel con trazabilidad completa.</p>
+                </div>
+                <div class="tech-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Power Pages</h3>
+                    <p>Desarrollo en curso de una versión mejorada del portal para integrar funcionalidades de GLPI.</p>
+                </div>
+                <div class="tech-card">
+                    <i class="fas fa-calendar"></i>
+                    <h3>Microsoft Planner</h3>
+                    <p>Integración con calendarios para visualización de disponibilidad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resultados -->
+    <section class="results-section">
+        <div class="container">
+            <h2 class="section-title">Resultados e Impacto</h2>
+            
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Métricas en Tiempo Real</h3>
+                    <p>El área ahora puede generar reportes automáticos sobre equipos más utilizados, desempeño de operadores, estados de tickets y análisis de incidencias.</p>
+                </div>
+                
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Reducción de Tiempo</h3>
+                    <p>Eliminación del proceso manual de gestión por correo, reduciendo significativamente el tiempo de respuesta a solicitudes.</p>
+                </div>
+
+                <div class="result-card eco-impact">
+                    <div class="result-icon eco">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Impacto Ecológico</h3>
+                    <p>Anteriormente se imprimían <strong>3 hojas por solicitud de equipos</strong> y <strong>6 hojas por reserva de recinto</strong>. Con el nuevo sistema, <strong>cero impresiones</strong>, contribuyendo significativamente a la sostenibilidad ambiental del CTA.</p>
+                </div>
+                
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Transparencia Total</h3>
+                    <p>Los estudiantes pueden verificar el estado de sus solicitudes en cualquier momento y consultar disponibilidad en tiempo real.</p>
+                </div>
+                
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Trazabilidad Completa</h3>
+                    <p>Registro detallado de cada ticket, incluyendo aprobadores, fechas, estados y posibles incidencias durante entrega o devolución.</p>
+                </div>
+                
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3>Mejor Experiencia de Usuario</h3>
+                    <p>Interfaz amigable, proceso simplificado y notificaciones automáticas mejoran la experiencia tanto de estudiantes como de personal.</p>
+                </div>
+                
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Decisiones Basadas en Datos</h3>
+                    <p>Capacidad de analizar tendencias, identificar problemas recurrentes y optimizar la asignación de recursos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reconocimiento -->
+    <section class="recognition-section">
+        <div class="container">
+            <div class="recognition-content">
+                <div class="trophy-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <h2>Premio Innovación DuocUC 2024</h2>
+                <p>Este proyecto fue seleccionado como el <strong>mejor proyecto de innovación</strong> del año y fue premiado en Santiago por la Dirección de Innovación de DuocUC.</p>
+                <p class="recognition-impact">El reconocimiento valida el impacto real del sistema en la mejora de procesos operacionales y la experiencia de la comunidad estudiantil.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Evolución Futura -->
+    <section class="future-section">
+        <div class="container">
+            <h2 class="section-title">Evolución y Desarrollo Futuro</h2>
+            <div class="future-content">
+                <p class="future-intro">El proyecto continúa en desarrollo activo con nuevas funcionalidades:</p>
+                
+                <div class="future-features">
+                    <div class="future-item">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h4>Sistema de Incidencias</h4>
+                        <p>Implementación de reportes de incidencias integrados en el flujo de trabajo.</p>
+                    </div>
+                    
+                    <div class="future-item">
+                        <i class="fas fa-book"></i>
+                        <h4>Bitácoras Digitales</h4>
+                        <p>Registro digital de actividades y uso de equipos para mejor control.</p>
+                    </div>
+                    
+                    <div class="future-item">
+                        <i class="fas fa-globe"></i>
+                        <h4>Migración a Power Pages</h4>
+                        <p>Desarrollo de una versión mejorada que integre las funcionalidades de GLPI en un entorno Microsoft unificado, mejorando la experiencia del usuario final.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lessons Learned -->
+    <section class="lessons-section">
+        <div class="container">
+            <h2 class="section-title">Aprendizajes Clave</h2>
+            <div class="lessons-grid">
+                <div class="lesson-card">
+                    <h4>Automatización de Procesos</h4>
+                    <p>La automatización no solo ahorra tiempo, sino que también mejora la calidad de los datos y permite escalabilidad.</p>
+                </div>
+                <div class="lesson-card">
+                    <h4>Enfoque en el Usuario</h4>
+                    <p>Diseñar pensando en la experiencia del usuario final es crucial para la adopción exitosa del sistema.</p>
+                </div>
+                <div class="lesson-card">
+                    <h4>Ecosistema Integrado</h4>
+                    <p>Aprovechar herramientas del mismo ecosistema facilita la integración y reduce la complejidad técnica.</p>
+                </div>
+                <div class="lesson-card">
+                    <h4>Iteración Continua</h4>
+                    <p>El feedback constante de usuarios permite identificar mejoras y expandir funcionalidades de manera efectiva.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agradecimientos -->
+    <section class="acknowledgments-section">
+        <div class="container">
+            <h2 class="section-title">Agradecimientos</h2>
+            <p class="section-intro">Este proyecto no hubiera sido posible sin el apoyo y colaboración de personas clave</p>
+            
+            <div class="acknowledgments-grid">
+                <div class="acknowledgment-card">
+                    <div class="acknowledgment-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Marta Fuenzalida</h3>
+                    <p class="role">Jefa de Servicios Digitales (SSDD) y CTA</p>
+                    <p class="description">Por incentivarme y apoyarme en la creación de este proyecto, brindando su confianza y guía durante todo el proceso de desarrollo e implementación.</p>
+                </div>
+
+                <div class="acknowledgment-card">
+                    <div class="acknowledgment-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Gabriel Grobier</h3>
+                    <p class="role">Ex Colaborador de Servicios Digitales y Profesor</p>
+                    <p class="description">Por su ayuda fundamental en la creación e impulso inicial del proyecto, siendo pieza clave en las primeras etapas de desarrollo.</p>
+                </div>
+            </div>
+
+            <div class="acknowledgment-note">
+                <p>Mi más sincero agradecimiento al equipo del CTA y a todos los estudiantes que han utilizado el sistema, brindando retroalimentación valiosa para su mejora continua.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Gallery -->
+    <section class="screenshots-section">
+        <div class="container">
+            <h2 class="section-title">Capturas de Pantalla</h2>
+            <p class="section-intro">Visualiza la interfaz y funcionalidades del sistema en acción</p>
+            
+            <div class="screenshots-grid">
+                <div class="screenshot-item" data-category="portal">
+                    <div class="screenshot-wrapper">
+                        <div class="screenshot-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Portal Principal SharePoint</p>
+                        </div>
+                        <!-- Reemplazar con: <img src="images/portal-principal.jpg" alt="Portal Principal SharePoint" loading="lazy"> -->
+                    </div>
+                    <div class="screenshot-caption">
+                        <h4>Portal Principal</h4>
+                        <p>Interfaz centralizada de acceso a formularios y calendarios</p>
+                    </div>
+                </div>
+
+                <div class="screenshot-item" data-category="forms">
+                    <div class="screenshot-wrapper">
+                        <div class="screenshot-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Formulario de Solicitud</p>
+                        </div>
+                        <!-- Reemplazar con: <img src="images/formulario-equipos.jpg" alt="Formulario de Solicitud de Equipos" loading="lazy"> -->
+                    </div>
+                    <div class="screenshot-caption">
+                        <h4>Formulario de Solicitud</h4>
+                        <p>Microsoft Forms para solicitud de equipos audiovisuales</p>
+                    </div>
+                </div>
+
+                <div class="screenshot-item" data-category="approval">
+                    <div class="screenshot-wrapper">
+                        <div class="screenshot-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Sistema de Aprobaciones</p>
+                        </div>
+                        <!-- Reemplazar con: <img src="images/aprobaciones.jpg" alt="Sistema de Aprobaciones" loading="lazy"> -->
+                    </div>
+                    <div class="screenshot-caption">
+                        <h4>Proceso de Aprobación</h4>
+                        <p>Flujo de aprobaciones dual con notificaciones automatizadas</p>
+                    </div>
+                </div>
+
+                <div class="screenshot-item" data-category="tickets">
+                    <div class="screenshot-wrapper">
+                        <div class="screenshot-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Lista de Tickets</p>
+                        </div>
+                        <!-- Reemplazar con: <img src="images/lista-tickets.jpg" alt="Lista de Tickets en SharePoint" loading="lazy"> -->
+                    </div>
+                    <div class="screenshot-caption">
+                        <h4>Gestión de Tickets</h4>
+                        <p>Vista de lista de SharePoint con estado de solicitudes</p>
+                    </div>
+                </div>
+
+                <div class="screenshot-item" data-category="calendar">
+                    <div class="screenshot-wrapper">
+                        <div class="screenshot-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Calendario de Recintos</p>
+                        </div>
+                        <!-- Reemplazar con: <img src="images/calendario.jpg" alt="Calendario de Disponibilidad" loading="lazy"> -->
+                    </div>
+                    <div class="screenshot-caption">
+                        <h4>Calendarios en Tiempo Real</h4>
+                        <p>Visualización de disponibilidad de recintos actualizada automáticamente</p>
+                    </div>
+                </div>
+
+                <div class="screenshot-item" data-category="flow">
+                    <div class="screenshot-wrapper">
+                        <div class="screenshot-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Power Automate Flow</p>
+                        </div>
+                        <!-- Reemplazar con: <img src="images/power-automate.jpg" alt="Flow de Power Automate" loading="lazy"> -->
+                    </div>
+                    <div class="screenshot-caption">
+                        <h4>Automatización</h4>
+                        <p>Diagrama de flujo de Power Automate para gestión de tickets</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section class="videos-section">
+        <div class="container">
+            <h2 class="section-title">Videos Demostrativos</h2>
+            <p class="section-intro">Mira el sistema en funcionamiento</p>
+            
+            <div class="videos-grid">
+                <div class="video-item">
+                    <div class="video-wrapper">
+                        <div class="video-placeholder">
+                            <i class="fas fa-play-circle"></i>
+                            <p>Demo Completa del Sistema</p>
+                        </div>
+                        <!-- Para agregar video de YouTube, reemplazar con: -->
+                        <!-- <iframe src="https://www.youtube.com/embed/TU_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        
+                        <!-- Para agregar video local, reemplazar con: -->
+                        <!-- <video controls>
+                            <source src="videos/demo-sistema.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video> -->
+                    </div>
+                    <div class="video-caption">
+                        <h4>Demostración Completa</h4>
+                        <p>Recorrido completo del sistema desde la perspectiva del estudiante y del administrador</p>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-wrapper">
+                        <div class="video-placeholder">
+                            <i class="fas fa-play-circle"></i>
+                            <p>Proceso de Solicitud</p>
+                        </div>
+                        <!-- Agregar video aquí -->
+                    </div>
+                    <div class="video-caption">
+                        <h4>Flujo de Solicitud de Equipos</h4>
+                        <p>Tutorial paso a paso del proceso de solicitud y aprobación de equipos</p>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-wrapper">
+                        <div class="video-placeholder">
+                            <i class="fas fa-play-circle"></i>
+                            <p>Panel de Métricas</p>
+                        </div>
+                        <!-- Agregar video aquí -->
+                    </div>
+                    <div class="video-caption">
+                        <h4>Dashboard de Métricas</h4>
+                        <p>Visualización de reportes y análisis de datos en tiempo real</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-note">
+                <i class="fas fa-info-circle"></i>
+                <p>Los videos se agregarán próximamente. También puedes solicitar una demostración en vivo del sistema.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Projects -->
+    <section class="back-section">
+        <div class="container">
+            <a href="index.html#proyectos" class="btn btn-primary">
+                <i class="fas fa-arrow-left"></i> Volver a Proyectos
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Cristian Tapia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
