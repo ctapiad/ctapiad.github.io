@@ -1029,6 +1029,20 @@ footer {
     color: var(--gold);
 }
 
+.experience-roles {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.experience-role h4 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-color);
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
 .skills-section {
     background-color: white;
 }
