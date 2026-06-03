@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Cristian Tapia - Estudiante de Ingeniería en Informática">
+    <title>Cristian Tapia - Portafolio Informática</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h2><a href="index.html" class="logo-link">Cristian Tapia</a></h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Portafolios</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre Mí</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <p class="hero-portfolio-label"><a href="index.html"><i class="fas fa-arrow-left"></i> Portafolios</a> · Informática</p>
+            <h1 class="hero-title">Hola, soy <span class="highlight">Cristian Tapia</span></h1>
+            <p class="hero-subtitle">Estudiante de Ingeniería en Informática | Desarrollador de Soluciones Innovadoras</p>
+            <p class="hero-description">Especializado en automatización de procesos, desarrollo web y arquitectura de microservicios</p>
+            <div class="hero-buttons">
+                <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+                <a href="#contacto" class="btn btn-secondary">Contacto</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Soy estudiante de tercer año de Ingeniería en Informática en DuocUC Sede Viña del Mar, apasionado por crear soluciones tecnológicas que mejoren la eficiencia de los procesos empresariales.</p>
+                    <p>Mi experiencia incluye el desarrollo de sistemas de automatización con Microsoft 365, aplicaciones web con React, arquitecturas de microservicios y apps móviles. Trabajo como Operador de laboratorio en el Centro Tecnológico Audiovisual (CTA), donde he liderado la evolución del sistema de reservas del centro.</p>
+                    <div class="skills">
+                        <h3>Habilidades Técnicas:</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fab fa-react"></i>
+                                <span>React + Vite</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-server"></i>
+                                <span>Microservicios</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-robot"></i>
+                                <span>Power Automate</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <span>PostgreSQL / MySQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-android"></i>
+                                <span>Android (Kotlin)</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-leaf"></i>
+                                <span>Spring Boot</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="projects">
+        <div class="container">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <p class="section-intro centered">Línea evolutiva del sistema de reservas CTA: prototipo Microsoft 365 → MVP React → arquitectura profesional en microservicios</p>
+
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-badge">
+                        <i class="fas fa-trophy"></i>
+                        <span>Premio Innovación DuocUC</span>
+                    </div>
+                    <div class="project-image">
+                        <i class="fas fa-ticket-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Sistema de Tickets y Reservas CTA</h3>
+                        <p class="project-category">v1 · Automatización Microsoft 365</p>
+                        <p class="project-description">
+                            Prototipo original con Power Automate, SharePoint y Forms. Premiado como mejor proyecto de innovación institucional. Base para las versiones posteriores.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Power Automate</span>
+                            <span class="tag">SharePoint</span>
+                            <span class="tag">Microsoft Forms</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="proyecto-cta.html" class="btn btn-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Sistema de Reservas CTA — Versión React</h3>
+                        <p class="project-category">v2 · MVP funcional en producción</p>
+                        <p class="project-description">
+                            Evolución del prototipo original hacia una aplicación React + Vite integrada con Power Automate. MVP funcional desplegado en Vercel, usado por estudiantes del CTA.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Vite</span>
+                            <span class="tag">Vercel</span>
+                            <span class="tag">Power Automate</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="proyecto-cta-react.html" class="btn btn-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-badge status-dev">
+                        <i class="fas fa-code-branch"></i>
+                        <span>En desarrollo</span>
+                    </div>
+                    <div class="project-image">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Sistema de Reservas CTA — Microservicios</h3>
+                        <p class="project-category">v3 · Arquitectura profesional</p>
+                        <p class="project-description">
+                            Migración a microservicios con BFF, autenticación JWT, PostgreSQL, RabbitMQ y patrones de arquitectura empresarial. Desarrollo activo con la organización FullStack-3.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">RabbitMQ</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="proyecto-cta-microservicios.html" class="btn btn-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-badge status-dev">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Innovación DuocUC</span>
+                    </div>
+                    <div class="project-image">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Entrenador FUAS</h3>
+                        <p class="project-category">MVP funcional · Etapa temprana</p>
+                        <p class="project-description">
+                            App educativa para reforzar el proceso FUAS con alumnos de cuarto medio. MVP funcional con Android, backend Spring Boot y despliegue en AWS. En proceso de innovación institucional.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Kotlin</span>
+                            <span class="tag">Jetpack Compose</span>
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">AWS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="proyecto-fuas.html" class="btn btn-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="achievements">
+        <div class="container">
+            <h2 class="section-title">Logros y Reconocimientos</h2>
+            <div class="achievements-grid">
+                <div class="achievement-item">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Premio Innovación DuocUC</h3>
+                    <p>Mejor Proyecto de Innovación 2024</p>
+                    <p class="achievement-detail">Reconocido en Santiago por la Dirección de Innovación de DuocUC</p>
+                </div>
+                <div class="achievement-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Impacto Medible</h3>
+                    <p>Mejora en Eficiencia Operacional</p>
+                    <p class="achievement-detail">Sistema implementado mejorando procesos del CTA</p>
+                </div>
+                <div class="achievement-item">
+                    <i class="fas fa-users"></i>
+                    <h3>Trabajo en el CTA</h3>
+                    <p>Centro Tecnológico Audiovisual</p>
+                    <p class="achievement-detail">DuocUC Sede Viña del Mar · Operador de laboratorio</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-content">
+                <p>¿Interesado en colaborar o conocer más sobre mis proyectos?</p>
+                <div class="contact-info">
+                    <a href="mailto:cristian.tapia.delrio@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>cristian.tapia.delrio@gmail.com</span>
+                    </a>
+                    <a href="https://github.com/ctapiad" target="_blank" class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <span>github.com/ctapiad</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/cristian-tapia-76b19819b/" target="_blank" class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Cristian Tapia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

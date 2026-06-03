@@ -18,9 +18,10 @@
                     <h2>Cristian Tapia</h2>
                 </div>
                 <ul class="nav-menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="index.html#proyectos">Proyectos</a></li>
-                    <li><a href="index.html#contacto">Contacto</a></li>
+                    <li><a href="index.html">Portafolios</a></li>
+                    <li><a href="informatica.html">Informática</a></li>
+                    <li><a href="informatica.html#proyectos">Proyectos</a></li>
+                    <li><a href="informatica.html#contacto">Contacto</a></li>
                 </ul>
                 <div class="hamburger">
                     <span></span>
@@ -35,7 +36,7 @@
     <section class="project-header">
         <div class="container">
             <div class="breadcrumb">
-                <a href="index.html">Inicio</a> / <a href="index.html#proyectos">Proyectos</a> / <span>Sistema CTA</span>
+                <a href="index.html">Portafolios</a> / <a href="informatica.html#proyectos">Proyectos</a> / <span>Sistema CTA v1</span>
             </div>
             <div class="project-header-content">
                 <div class="project-badge-large">
@@ -43,7 +44,7 @@
                     <span>Premio Innovación DuocUC 2024</span>
                 </div>
                 <h1>Sistema Automatizado de Tickets y Reservas CTA</h1>
-                <p class="project-subtitle">Centro Tecnológico Audiovisual - DuocUC Sede Viña del Mar</p>
+                <p class="project-subtitle">v1 · Prototipo con Microsoft 365 · Centro Tecnológico Audiovisual, DuocUC Sede Viña del Mar</p>
                 <div class="project-meta">
                     <span><i class="fas fa-calendar"></i> 2024</span>
                     <span><i class="fas fa-building"></i> DuocUC</span>
@@ -61,7 +62,7 @@
                 <div class="overview-card">
                     <i class="fas fa-bullseye"></i>
                     <h3>Objetivo</h3>
-                    <p>Automatizar y optimizar el sistema de gestión de tickets, reservas de equipos audiovisuales y recintos del Centro Tecnológico Audiovisual.</p>
+                    <p>Automatizar y optimizar el sistema de gestión de tickets, reservas de equipos audiovisuales y recintos del Centro Tecnológico Audiovisual. Este proyecto funcionó como <strong>prototipo validado</strong> para desarrollar el MVP en React (<a href="proyecto-cta-react.html">Sistema de Reservas CTA — Versión React</a>).</p>
                 </div>
                 <div class="overview-card">
                     <i class="fas fa-chart-line"></i>
@@ -375,30 +376,36 @@
         </div>
     </section>
 
-    <!-- Evolución Futura -->
-    <section class="future-section">
+    <!-- Evolución del Proyecto -->
+    <section class="future-section evolution-section">
         <div class="container">
-            <h2 class="section-title">Evolución y Desarrollo Futuro</h2>
+            <h2 class="section-title">Evolución del Proyecto</h2>
             <div class="future-content">
-                <p class="future-intro">El proyecto continúa en desarrollo activo con nuevas funcionalidades:</p>
-                
-                <div class="future-features">
-                    <div class="future-item">
-                        <i class="fas fa-exclamation-triangle"></i>
-                        <h4>Sistema de Incidencias</h4>
-                        <p>Implementación de reportes de incidencias integrados en el flujo de trabajo.</p>
+                <p class="future-intro">Este prototipo con Microsoft 365 validó el flujo de reservas del CTA y sentó las bases para las siguientes versiones del sistema:</p>
+
+                <div class="evolution-timeline">
+                    <div class="evolution-step current">
+                        <div class="evolution-marker">v1</div>
+                        <div class="evolution-body">
+                            <h4>Prototipo Microsoft 365 <span class="evolution-tag">Este proyecto</span></h4>
+                            <p>Power Automate, SharePoint y Forms. Premiado como mejor proyecto de innovación DuocUC 2024. Validó el proceso y demostró el impacto operacional.</p>
+                        </div>
                     </div>
-                    
-                    <div class="future-item">
-                        <i class="fas fa-book"></i>
-                        <h4>Bitácoras Digitales</h4>
-                        <p>Registro digital de actividades y uso de equipos para mejor control.</p>
+
+                    <div class="evolution-step">
+                        <div class="evolution-marker">v2</div>
+                        <div class="evolution-body">
+                            <h4><a href="proyecto-cta-react.html">Sistema de Reservas CTA — Versión React</a></h4>
+                            <p>MVP funcional en producción con React + Vite, integrado con Power Automate. Sigue siendo un prototipo MVP operativo usado por estudiantes del CTA.</p>
+                        </div>
                     </div>
-                    
-                    <div class="future-item">
-                        <i class="fas fa-globe"></i>
-                        <h4>Migración a Power Pages</h4>
-                        <p>Desarrollo de una versión mejorada que integre las funcionalidades de GLPI en un entorno Microsoft unificado, mejorando la experiencia del usuario final.</p>
+
+                    <div class="evolution-step">
+                        <div class="evolution-marker">v3</div>
+                        <div class="evolution-body">
+                            <h4><a href="proyecto-cta-microservicios.html">Sistema de Reservas CTA — Microservicios</a> <span class="evolution-tag dev">En desarrollo</span></h4>
+                            <p>Gracias al MVP React, se está desarrollando la versión formal con arquitectura de microservicios, BFF, autenticación JWT, PostgreSQL y estándares profesionales. Proyecto activo en la organización <a href="https://github.com/FullStack-3" target="_blank">FullStack-3</a>.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -462,168 +469,10 @@
         </div>
     </section>
 
-    <!-- Screenshots Gallery -->
-    <section class="screenshots-section">
-        <div class="container">
-            <h2 class="section-title">Capturas de Pantalla</h2>
-            <p class="section-intro">Visualiza la interfaz y funcionalidades del sistema en acción</p>
-            
-            <div class="screenshots-grid">
-                <div class="screenshot-item" data-category="portal">
-                    <div class="screenshot-wrapper">
-                        <div class="screenshot-placeholder">
-                            <i class="fas fa-image"></i>
-                            <p>Portal Principal SharePoint</p>
-                        </div>
-                        <!-- Reemplazar con: <img src="images/portal-principal.jpg" alt="Portal Principal SharePoint" loading="lazy"> -->
-                    </div>
-                    <div class="screenshot-caption">
-                        <h4>Portal Principal</h4>
-                        <p>Interfaz centralizada de acceso a formularios y calendarios</p>
-                    </div>
-                </div>
-
-                <div class="screenshot-item" data-category="forms">
-                    <div class="screenshot-wrapper">
-                        <div class="screenshot-placeholder">
-                            <i class="fas fa-image"></i>
-                            <p>Formulario de Solicitud</p>
-                        </div>
-                        <!-- Reemplazar con: <img src="images/formulario-equipos.jpg" alt="Formulario de Solicitud de Equipos" loading="lazy"> -->
-                    </div>
-                    <div class="screenshot-caption">
-                        <h4>Formulario de Solicitud</h4>
-                        <p>Microsoft Forms para solicitud de equipos audiovisuales</p>
-                    </div>
-                </div>
-
-                <div class="screenshot-item" data-category="approval">
-                    <div class="screenshot-wrapper">
-                        <div class="screenshot-placeholder">
-                            <i class="fas fa-image"></i>
-                            <p>Sistema de Aprobaciones</p>
-                        </div>
-                        <!-- Reemplazar con: <img src="images/aprobaciones.jpg" alt="Sistema de Aprobaciones" loading="lazy"> -->
-                    </div>
-                    <div class="screenshot-caption">
-                        <h4>Proceso de Aprobación</h4>
-                        <p>Flujo de aprobaciones dual con notificaciones automatizadas</p>
-                    </div>
-                </div>
-
-                <div class="screenshot-item" data-category="tickets">
-                    <div class="screenshot-wrapper">
-                        <div class="screenshot-placeholder">
-                            <i class="fas fa-image"></i>
-                            <p>Lista de Tickets</p>
-                        </div>
-                        <!-- Reemplazar con: <img src="images/lista-tickets.jpg" alt="Lista de Tickets en SharePoint" loading="lazy"> -->
-                    </div>
-                    <div class="screenshot-caption">
-                        <h4>Gestión de Tickets</h4>
-                        <p>Vista de lista de SharePoint con estado de solicitudes</p>
-                    </div>
-                </div>
-
-                <div class="screenshot-item" data-category="calendar">
-                    <div class="screenshot-wrapper">
-                        <div class="screenshot-placeholder">
-                            <i class="fas fa-image"></i>
-                            <p>Calendario de Recintos</p>
-                        </div>
-                        <!-- Reemplazar con: <img src="images/calendario.jpg" alt="Calendario de Disponibilidad" loading="lazy"> -->
-                    </div>
-                    <div class="screenshot-caption">
-                        <h4>Calendarios en Tiempo Real</h4>
-                        <p>Visualización de disponibilidad de recintos actualizada automáticamente</p>
-                    </div>
-                </div>
-
-                <div class="screenshot-item" data-category="flow">
-                    <div class="screenshot-wrapper">
-                        <div class="screenshot-placeholder">
-                            <i class="fas fa-image"></i>
-                            <p>Power Automate Flow</p>
-                        </div>
-                        <!-- Reemplazar con: <img src="images/power-automate.jpg" alt="Flow de Power Automate" loading="lazy"> -->
-                    </div>
-                    <div class="screenshot-caption">
-                        <h4>Automatización</h4>
-                        <p>Diagrama de flujo de Power Automate para gestión de tickets</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Videos Section -->
-    <section class="videos-section">
-        <div class="container">
-            <h2 class="section-title">Videos Demostrativos</h2>
-            <p class="section-intro">Mira el sistema en funcionamiento</p>
-            
-            <div class="videos-grid">
-                <div class="video-item">
-                    <div class="video-wrapper">
-                        <div class="video-placeholder">
-                            <i class="fas fa-play-circle"></i>
-                            <p>Demo Completa del Sistema</p>
-                        </div>
-                        <!-- Para agregar video de YouTube, reemplazar con: -->
-                        <!-- <iframe src="https://www.youtube.com/embed/TU_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                        
-                        <!-- Para agregar video local, reemplazar con: -->
-                        <!-- <video controls>
-                            <source src="videos/demo-sistema.mp4" type="video/mp4">
-                            Tu navegador no soporta el elemento de video.
-                        </video> -->
-                    </div>
-                    <div class="video-caption">
-                        <h4>Demostración Completa</h4>
-                        <p>Recorrido completo del sistema desde la perspectiva del estudiante y del administrador</p>
-                    </div>
-                </div>
-
-                <div class="video-item">
-                    <div class="video-wrapper">
-                        <div class="video-placeholder">
-                            <i class="fas fa-play-circle"></i>
-                            <p>Proceso de Solicitud</p>
-                        </div>
-                        <!-- Agregar video aquí -->
-                    </div>
-                    <div class="video-caption">
-                        <h4>Flujo de Solicitud de Equipos</h4>
-                        <p>Tutorial paso a paso del proceso de solicitud y aprobación de equipos</p>
-                    </div>
-                </div>
-
-                <div class="video-item">
-                    <div class="video-wrapper">
-                        <div class="video-placeholder">
-                            <i class="fas fa-play-circle"></i>
-                            <p>Panel de Métricas</p>
-                        </div>
-                        <!-- Agregar video aquí -->
-                    </div>
-                    <div class="video-caption">
-                        <h4>Dashboard de Métricas</h4>
-                        <p>Visualización de reportes y análisis de datos en tiempo real</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="video-note">
-                <i class="fas fa-info-circle"></i>
-                <p>Los videos se agregarán próximamente. También puedes solicitar una demostración en vivo del sistema.</p>
-            </div>
-        </div>
-    </section>
-
     <!-- Back to Projects -->
     <section class="back-section">
         <div class="container">
-            <a href="index.html#proyectos" class="btn btn-primary">
+            <a href="informatica.html#proyectos" class="btn btn-primary">
                 <i class="fas fa-arrow-left"></i> Volver a Proyectos
             </a>
         </div>
@@ -632,7 +481,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Cristian Tapia. Todos los derechos reservados.</p>
+            <p>&copy; 2026 Cristian Tapia. Todos los derechos reservados.</p>
         </div>
     </footer>
 

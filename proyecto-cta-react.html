@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema de Reservas CTA - Versión React MVP en producción">
+    <title>Sistema CTA React - Cristian Tapia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="proyecto-cta.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo"><h2>Cristian Tapia</h2></div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Portafolios</a></li>
+                    <li><a href="informatica.html">Informática</a></li>
+                    <li><a href="informatica.html#proyectos">Proyectos</a></li>
+                    <li><a href="informatica.html#contacto">Contacto</a></li>
+                </ul>
+                <div class="hamburger"><span></span><span></span><span></span></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="project-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Portafolios</a> / <a href="informatica.html#proyectos">Proyectos</a> / <span>Sistema CTA v2 React</span>
+            </div>
+            <div class="project-header-content">
+                <div class="project-badge-large status-mvp">
+                    <i class="fab fa-react"></i>
+                    <span>MVP funcional en producción</span>
+                </div>
+                <h1>Sistema de Reservas CTA — Versión React</h1>
+                <p class="project-subtitle">v2 · Evolución del prototipo Microsoft 365 hacia una aplicación web moderna</p>
+                <div class="project-meta">
+                    <span><i class="fas fa-calendar"></i> 2025 – 2026</span>
+                    <span><i class="fas fa-building"></i> DuocUC · CTA</span>
+                    <span><i class="fas fa-globe"></i> <a href="https://recursos-cta.vercel.app" target="_blank" style="color:inherit">recursos-cta.vercel.app</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-overview">
+        <div class="container">
+            <h2 class="section-title">Resumen del Proyecto</h2>
+            <div class="overview-content">
+                <div class="overview-card">
+                    <i class="fas fa-code-branch"></i>
+                    <h3>Origen</h3>
+                    <p>Evolución directa del <a href="proyecto-cta.html">prototipo con Microsoft 365</a>, que validó el flujo de reservas del CTA. Este MVP React mantiene la integración con Power Automate y SharePoint como backend de datos.</p>
+                </div>
+                <div class="overview-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Estado actual</h3>
+                    <p>Sigue siendo un <strong>prototipo MVP funcional</strong> desplegado en Vercel y usado activamente por estudiantes del CTA para reservar equipos y recintos audiovisuales.</p>
+                </div>
+                <div class="overview-card">
+                    <i class="fas fa-arrow-right"></i>
+                    <h3>Próximo paso</h3>
+                    <p>La experiencia y aprendizajes de este MVP impulsaron el desarrollo de la <a href="proyecto-cta-microservicios.html">versión con microservicios</a>, con arquitectura profesional y estándares empresariales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="solution-section">
+        <div class="container">
+            <h2 class="section-title">Funcionalidades Principales</h2>
+            <div class="architecture">
+                <div class="architecture-item">
+                    <div class="arch-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <h4>Reserva de Equipos</h4>
+                    <p>Carrito de equipos con validación de disponibilidad en tiempo real, filtros por carrera y asignatura, y restricciones horarias configurables.</p>
+                </div>
+                <div class="architecture-item">
+                    <div class="arch-icon"><i class="fas fa-door-open"></i></div>
+                    <h4>Reserva de Recintos</h4>
+                    <p>Estudios de sonido, set de TV, sala cyber café y recintos por carrera (Audiovisual, Animación, Sonido) con verificación anti-duplicados.</p>
+                </div>
+                <div class="architecture-item">
+                    <div class="arch-icon"><i class="fas fa-list-alt"></i></div>
+                    <h4>Mis Solicitudes</h4>
+                    <p>Seguimiento del estado de reservas con historial completo y notificaciones del flujo de aprobación docente + CTA.</p>
+                </div>
+                <div class="architecture-item">
+                    <div class="arch-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h4>Validaciones de Negocio</h4>
+                    <p>Bloqueo global de equipos entre carreras, protección contra race conditions, restricciones de horario por equipo y validación de correos institucionales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-section">
+        <div class="container">
+            <h2 class="section-title">Stack Tecnológico</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <i class="fab fa-react"></i>
+                    <h3>React + Vite</h3>
+                    <p>Frontend SPA con componentes modulares, routing y estado reactivo.</p>
+                </div>
+                <div class="tech-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>Power Automate</h3>
+                    <p>Flujos HTTP para crear solicitudes, verificar disponibilidad y gestionar aprobaciones.</p>
+                </div>
+                <div class="tech-card">
+                    <i class="fas fa-database"></i>
+                    <h3>SharePoint Lists</h3>
+                    <p>Base de datos de equipos, recintos, solicitudes y estados de reserva.</p>
+                </div>
+                <div class="tech-card">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Vercel</h3>
+                    <p>Despliegue en producción con optimización de assets y CDN global.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="future-section evolution-section">
+        <div class="container">
+            <h2 class="section-title">Línea Evolutiva</h2>
+            <div class="evolution-timeline">
+                <div class="evolution-step">
+                    <div class="evolution-marker">v1</div>
+                    <div class="evolution-body">
+                        <h4><a href="proyecto-cta.html">Prototipo Microsoft 365</a></h4>
+                        <p>Validación del proceso con Power Automate y SharePoint. Premio Innovación DuocUC 2024.</p>
+                    </div>
+                </div>
+                <div class="evolution-step current">
+                    <div class="evolution-marker">v2</div>
+                    <div class="evolution-body">
+                        <h4>Versión React <span class="evolution-tag">Este proyecto</span></h4>
+                        <p>MVP funcional en producción. Mejora significativa de UX respecto al portal SharePoint.</p>
+                    </div>
+                </div>
+                <div class="evolution-step">
+                    <div class="evolution-marker">v3</div>
+                    <div class="evolution-body">
+                        <h4><a href="proyecto-cta-microservicios.html">Microservicios</a> <span class="evolution-tag dev">En desarrollo</span></h4>
+                        <p>Arquitectura profesional con BFF, JWT, PostgreSQL y RabbitMQ.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="back-section">
+        <div class="container">
+            <a href="informatica.html#proyectos" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Volver a Proyectos</a>
+        </div>
+    </section>
+
+    <footer><div class="container"><p>&copy; 2026 Cristian Tapia. Todos los derechos reservados.</p></div></footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema de Reservas CTA - Arquitectura de Microservicios v3">
+    <title>Sistema CTA Microservicios - Cristian Tapia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="proyecto-cta.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo"><h2>Cristian Tapia</h2></div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Portafolios</a></li>
+                    <li><a href="informatica.html">Informática</a></li>
+                    <li><a href="informatica.html#proyectos">Proyectos</a></li>
+                    <li><a href="informatica.html#contacto">Contacto</a></li>
+                </ul>
+                <div class="hamburger"><span></span><span></span><span></span></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="project-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Portafolios</a> / <a href="informatica.html#proyectos">Proyectos</a> / <span>Sistema CTA v3 Microservicios</span>
+            </div>
+            <div class="project-header-content">
+                <div class="project-badge-large status-dev-badge">
+                    <i class="fas fa-code-branch"></i>
+                    <span>En desarrollo activo</span>
+                </div>
+                <h1>Sistema de Reservas CTA — Microservicios v2.0</h1>
+                <p class="project-subtitle">v3 · Migración a arquitectura profesional con estándares empresariales</p>
+                <div class="project-meta">
+                    <span><i class="fas fa-calendar"></i> 2025 – 2026</span>
+                    <span><i class="fas fa-building"></i> DuocUC · CTA</span>
+                    <span><i class="fab fa-github"></i> <a href="https://github.com/FullStack-3" target="_blank" style="color:inherit">FullStack-3</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-overview">
+        <div class="container">
+            <h2 class="section-title">Resumen del Proyecto</h2>
+            <div class="overview-content">
+                <div class="overview-card">
+                    <i class="fas fa-sitemap"></i>
+                    <h3>Motivación</h3>
+                    <p>Gracias al <a href="proyecto-cta-react.html">MVP React</a>, se identificaron limitaciones de escalar sobre Power Automate y SharePoint. Este proyecto migra el sistema a una arquitectura de microservicios desacoplada con estándares profesionales.</p>
+                </div>
+                <div class="overview-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Arquitectura</h3>
+                    <p>Microservicios con BFF (Backend For Frontend), API Gateway, autenticación JWT con RBAC, PostgreSQL, RabbitMQ para eventos asíncronos y SSE para notificaciones en tiempo real.</p>
+                </div>
+                <div class="overview-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Organización</h3>
+                    <p>Desarrollo activo en la organización <a href="https://github.com/FullStack-3" target="_blank">FullStack-3</a> de GitHub, como proyecto del curso Desarrollo FullStack III de DuocUC.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="solution-section">
+        <div class="container">
+            <h2 class="section-title">Servicios y Componentes</h2>
+            <div class="architecture">
+                <div class="architecture-item">
+                    <div class="arch-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h4>cta-bff</h4>
+                    <p>Backend For Frontend y API Gateway. Punto único de entrada externo con verificación JWT, control de roles (alumno, docente, admin, staff) y proxy hacia microservicios internos.</p>
+                </div>
+                <div class="architecture-item">
+                    <div class="arch-icon"><i class="fas fa-key"></i></div>
+                    <h4>cta-auth-service</h4>
+                    <p>Autenticación con JWT, refresh tokens, login/logout y gestión de usuarios administrativos.</p>
+                </div>
+                <div class="architecture-item">
+                    <div class="arch-icon"><i class="fas fa-calendar-check"></i></div>
+                    <h4>cta-bookings-service</h4>
+                    <p>API REST principal: recursos, reservas, panel docente, notificaciones SSE y publicación de eventos a RabbitMQ.</p>
+                </div>
+                <div class="architecture-item">
+                    <div class="arch-icon"><i class="fas fa-bell"></i></div>
+                    <h4>cta-notifications-lambda</h4>
+                    <p>Consumidor de eventos RabbitMQ que procesa notificaciones de forma asíncrona (simula AWS Lambda).</p>
+                </div>
+                <div class="architecture-item">
+                    <div class="arch-icon"><i class="fab fa-react"></i></div>
+                    <h4>cta-frontend + cta-admin-frontend</h4>
+                    <p>Dos frontends React + Vite: portal de estudiantes y panel administrativo/docente, con librería compartida cta-ui-lib.</p>
+                </div>
+                <div class="architecture-item">
+                    <div class="arch-icon"><i class="fas fa-database"></i></div>
+                    <h4>cta-database</h4>
+                    <p>Esquema PostgreSQL con migraciones versionadas para recursos, reservas, usuarios y notificaciones.</p>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">Flujo de Datos</h3>
+            <div class="workflow">
+                <div class="workflow-step">
+                    <div class="step-number"><i class="fas fa-sync"></i></div>
+                    <div class="step-content">
+                        <h4>Fase Síncrona</h4>
+                        <p>Usuario → Frontend → BFF → bookings-service → PostgreSQL → respuesta inmediata</p>
+                    </div>
+                </div>
+                <div class="workflow-arrow"><i class="fas fa-arrow-down"></i></div>
+                <div class="workflow-step">
+                    <div class="step-number"><i class="fas fa-bolt"></i></div>
+                    <div class="step-content">
+                        <h4>Fase Asíncrona</h4>
+                        <p>bookings-service → RabbitMQ (booking.events) → notifications-worker → log / Slack / email</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-section">
+        <div class="container">
+            <h2 class="section-title">Patrones de Arquitectura</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <i class="fas fa-door-open"></i>
+                    <h3>BFF Pattern</h3>
+                    <p>Adaptación de respuestas para frontend de alumnos vs panel admin desde un único gateway.</p>
+                </div>
+                <div class="tech-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>API Gateway</h3>
+                    <p>Centraliza auth, RBAC y rate limiting. Microservicios internos no expuestos al exterior.</p>
+                </div>
+                <div class="tech-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Event-Driven (EDA)</h3>
+                    <p>Desacopla reservas de notificaciones vía RabbitMQ Pub/Sub.</p>
+                </div>
+                <div class="tech-card">
+                    <i class="fas fa-stream"></i>
+                    <h3>SSE en Tiempo Real</h3>
+                    <p>Server-Sent Events para notificaciones instantáneas a estudiantes y administradores.</p>
+                </div>
+                <div class="tech-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Seguridad OWASP</h3>
+                    <p>Helmet, CORS restrictivo, rate limiting, queries parametrizadas, JWT y variables de entorno.</p>
+                </div>
+                <div class="tech-card">
+                    <i class="fab fa-docker"></i>
+                    <h3>Docker Compose</h3>
+                    <p>Orquestación completa de todos los servicios para desarrollo y despliegue local.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="future-section evolution-section">
+        <div class="container">
+            <h2 class="section-title">Línea Evolutiva</h2>
+            <div class="evolution-timeline">
+                <div class="evolution-step">
+                    <div class="evolution-marker">v1</div>
+                    <div class="evolution-body">
+                        <h4><a href="proyecto-cta.html">Prototipo Microsoft 365</a></h4>
+                        <p>Premio Innovación DuocUC 2024. Validación del flujo de reservas.</p>
+                    </div>
+                </div>
+                <div class="evolution-step">
+                    <div class="evolution-marker">v2</div>
+                    <div class="evolution-body">
+                        <h4><a href="proyecto-cta-react.html">Versión React</a></h4>
+                        <p>MVP funcional en producción con Power Automate como backend.</p>
+                    </div>
+                </div>
+                <div class="evolution-step current">
+                    <div class="evolution-marker">v3</div>
+                    <div class="evolution-body">
+                        <h4>Microservicios <span class="evolution-tag dev">Este proyecto</span></h4>
+                        <p>Versión formal con arquitectura empresarial. Desarrollo activo en <a href="https://github.com/FullStack-3" target="_blank">FullStack-3</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="back-section">
+        <div class="container">
+            <a href="informatica.html#proyectos" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Volver a Proyectos</a>
+        </div>
+    </section>
+
+    <footer><div class="container"><p>&copy; 2026 Cristian Tapia. Todos los derechos reservados.</p></div></footer>
+    <script src="script.js"></script>
+</body>
+</html>

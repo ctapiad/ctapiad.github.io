@@ -1072,3 +1072,125 @@
     opacity: 0.95;
 }
 
+/* Evolution timeline */
+.evolution-section {
+    background-color: var(--bg-secondary);
+}
+
+.evolution-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.evolution-step {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding: 1.5rem 0;
+    position: relative;
+}
+
+.evolution-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 22px;
+    top: 60px;
+    bottom: -10px;
+    width: 2px;
+    background: #e0e0e0;
+}
+
+.evolution-marker {
+    width: 46px;
+    height: 46px;
+    background: #f5f5f5;
+    border: 2px solid #e0e0e0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.evolution-step.current .evolution-marker {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.evolution-body {
+    background: white;
+    padding: 1.5rem;
+    flex: 1;
+    box-shadow: var(--shadow);
+    border: 1px solid #f0f0f0;
+}
+
+.evolution-step.current .evolution-body {
+    border-left: 3px solid var(--gold);
+}
+
+.evolution-body h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.evolution-body h4 a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.evolution-body h4 a:hover {
+    color: var(--gold);
+}
+
+.evolution-body p {
+    color: var(--text-light);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.evolution-body p a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.evolution-tag {
+    display: inline-block;
+    background: var(--gold);
+    color: #000;
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    font-weight: 700;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
+
+.evolution-tag.dev {
+    background: #333;
+    color: white;
+}
+
+.project-badge-large.status-mvp {
+    background: linear-gradient(135deg, #61dafb 0%, #20232a 100%);
+    color: white;
+}
+
+.project-badge-large.status-dev-badge {
+    background: linear-gradient(135deg, #333 0%, #555 100%);
+    color: white;
+}
+
+.overview-card a,
+.solution-section a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
